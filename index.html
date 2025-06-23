@@ -15,24 +15,88 @@
         <h1>BANCO DE DADOS - CURUÁ/PA</h1>
         <section id="container-filtros">
             <form method="post">
-                <fieldset>
-                    <legend></legend>
-
+                <fieldset id="dados-pessoais">
+                    <legend>Dados pessoais</legend>
+                    <div>
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome">
+                    </div>
+                    <div>
+                        <label for="icpf">CPF:</label>
+                        <input type="text" name="cpf" id="icpf">
+                    </div>
+                    <div>
+                        <label for="iende">Comunidade</label>
+                        <input type="text" name="ende" id="iende">
+                    </div>
                 </fieldset>
-                <fieldset>
-                    <legend></legend>
-                    
+                <fieldset id="outros-dados">
+                    <legend>Outras informações</legend>
+                    <div>
+                        <label for="idata-atualizarcao">Data de Atualização</label>
+                        <input type="date" name="data-atualizacao" id="idata-atualizacao">
+                    </div>
+                    <div id="observacao">
+                        <label for="iobs">Observação:</label>
+                        <textarea name="obs" id="iobs" rows="5" cols="60"></textarea>
+                    </div>
+                    <fieldset>
+                        <legend>Grupo</legend>
+                        <div>
+                            <input type="checkbox" name="bpc" id="ibpc">
+                            <label for="ibpc">BPC</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="unipessoal" id="iunipessoal">
+                            <label for="iunipessoal">Unipessoal</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="visita" id="ivisita">
+                            <label for="ivisita">Visita domiciliar</label>
+                        </div>
+                    </fieldset>
                 </fieldset>
             </form>
         </section>
         <section id="container-tabela">
-            <caption>LISTA DE FAMÍLIAS</caption>
             <table>
+                <caption id="ee">LISTA DE FAMÍLIAS</caption>
                 <thead>
-
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">Bairro/Comunidade</th>
+                        <th scope="col">Última atualização</th>
+                        <th scope="col">Botão atualizar</th>
+                        <th scope="col">BPC</th>
+                        <th scope="col">Visita</th>
+                        <th scope="col">Unipessoal</th>
+                    </tr>
                 </thead>
                 <tbody>
-
+                    <tr>
+                        <td>J-0000</td>
+                        <td class="texto-esquerda">JOÃO IRAILTON DE JESUS RAMOS JÚNIOR</td>
+                        <td>015.254.402-09</td>
+                        <td>DISTRITO FLEXAL</td>
+                        <td>23/06/2025</td>
+                        <td><button>Atualizar</button></td>
+                        <td>não</td>
+                        <td>não</td>
+                        <td>não</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="texto-esquerda"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tbody>
             </table>
         </section>

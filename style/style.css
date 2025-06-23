@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #08380a;
+}
+main{
+    width: 1250px;
+    margin: auto;
+    color: white;
+    padding: 20px;
+    background-color: #206729;
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+fieldset{
+    padding: 20px;
+    margin: 20px 0px;
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+fieldset label{
+    font-weight: bold;
+}   
+#outros-dados fieldset{
+    display: flex;        
+    flex-direction: column;
+}
+#outros-dados fieldset div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/*-----------CONFIG INPUTS----------------*/
+input{
+    height: 29px;
+    font-size: 18px;
+}
+input#inome{
+    width: 400px;
+}
+input#icpf{
+    width: 140px;
+}
+input#iende{
+    width: 350px;
+}
+#observacao{
+    display: flex;
+    gap: 10px;
+    height: 8em;
+}
+/*-----------------TABELA------------*/
+table caption{
+    font-size: 20px;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid white;
+    padding: 6px 10px;
+}
+table th{
+    text-align: center;
+}
+.texto-esquerda{
+    text-align: left;
+}
+
+
