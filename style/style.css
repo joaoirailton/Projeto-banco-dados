@@ -37,6 +37,10 @@ fieldset label{
     align-items: center;
     gap: 10px;
 }
+.btn{
+    width: 140px;
+    height: 50px;
+}
 /*-----------CONFIG INPUTS----------------*/
 input{
     height: 29px;
