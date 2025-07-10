@@ -15,19 +15,22 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
-    grid-template-columns: 290px 1fr;
+    grid-template-columns: 50px 1fr;
     grid-template-rows: 50px 1fr;
-    background-color: var(--cor3);
+    background-color: var(--cor5);
+    height: 100vh;
 }
 #body{
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 290px 1fr;
 }
 header{
     grid-column: 1/2;
     grid-row: 1/3;
     background-color: var(--cor2);
     color: var(--cor5);
+    height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 #conta{
     height: 70px;
@@ -44,14 +47,39 @@ header{
     margin-left: 5px;
 }
 
-#menu{
+ul#menu{
     list-style-type: none;
-
 }
-
+#btn-menu{
+    width: 35px;
+    height: 35px;
+    background-color: var(--cor3);
+    color: var(--cor4);
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    right: 7px;
+}
+#btn-menu:hover{
+    background-color: var(--cor1);
+    color: var(--cor3);
+}
 #menu li{
     padding: 15px 17px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.211);
+    display: flex;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    transition: .3s;
+}
+#menu li:hover{
+    background-color: var(--cor3);
 }
 span.icone-menu{
     color: var(--cor5);
